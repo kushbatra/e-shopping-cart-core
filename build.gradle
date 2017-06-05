@@ -1,0 +1,23 @@
+// Apply the java-library plugin to add support for Java Library
+apply plugin: 'java-library'
+apply plugin : 'eclipse'
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    jcenter()
+}
+
+dependencies {
+	compile 'org.springframework:spring-core:4.1.6.RELEASE'
+    compile 'org.springframework:spring-beans:4.1.6.RELEASE'
+    compile 'org.springframework:spring-context:4.1.6.RELEASE'
+    compile 'org.springframework:spring-orm:4.1.6.RELEASE'
+    compile 'org.hibernate:hibernate-core:4.2.21.Final'
+    compile 'org.hibernate:hibernate-entitymanager:4.2.21.Final'
+    compile 'postgresql:postgresql:9.4.1208-jdbc42-atlassian-hosted'
+    
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-all:1.10.19'
+    testCompile 'org.springframework:spring-test:4.1.8.RELEASE'
+}
+
