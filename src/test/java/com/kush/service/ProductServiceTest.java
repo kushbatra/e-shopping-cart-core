@@ -35,7 +35,7 @@ public class ProductServiceTest {
 	private ProductDAOImpl productDAOImpl;
 	
 	@Before
-	public void setup() {
+	public void setup() throws Exception {
 		MockitoAnnotations.initMocks(this);
 		List<Category> categories = new ArrayList<Category>();
 		List<ProductType> productTypes = new ArrayList<ProductType>();
@@ -51,9 +51,10 @@ public class ProductServiceTest {
 	
 	/**
 	 * Test Class for Category Type Service Implementation
+	 * @throws Exception 
 	 */
 	@Test
-	public void getCategoryTypeTest() {
+	public void getCategoryTypeTest() throws Exception {
 		List<Category> categories = productServiceImpl.getCategoryType();
 		Assert.assertNotNull(categories);
 	}

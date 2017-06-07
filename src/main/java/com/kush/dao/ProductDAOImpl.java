@@ -20,7 +20,7 @@ public class ProductDAOImpl implements ProductDAO {
 	final static Logger logger = Logger.getLogger(ProductDAOImpl.class);
 	
 	@Override
-	public List<Category> getCategoryType() {
+	public List<Category> getCategoryType() throws Exception {
 		logger.debug("Get Category Type - DAO");
 		
 		List<Category> categories = new ArrayList<Category>();

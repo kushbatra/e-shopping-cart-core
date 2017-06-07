@@ -15,7 +15,7 @@ public interface ProductDAO {
 	 * API to fetch category and product type
 	 * @return list of category
 	 */
-	public List<Category> getCategoryType();
+	public List<Category> getCategoryType() throws Exception;
 	
 	/**
 	 * API to fetch list of product belonging to particular sub category id.

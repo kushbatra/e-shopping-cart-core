@@ -22,7 +22,7 @@ public class ProductServiceImpl implements ProductService {
 	private ProductDAO itemsDAO;
 	
 	@Override
-	public List<Category> getCategoryType() {
+	public List<Category> getCategoryType() throws Exception {
 		List<Category> categoryType = itemsDAO.getCategoryType();
 		return categoryType;
 	}

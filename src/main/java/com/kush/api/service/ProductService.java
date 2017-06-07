@@ -15,7 +15,7 @@ public interface ProductService {
 	 * Service method to fetch category and product related data.
 	 * @return list of category
 	 */
-	public List<Category> getCategoryType();
+	public List<Category> getCategoryType() throws Exception;
 	
 	/**
 	 * Service method to fetch list of product belonging to particular sub category id.
