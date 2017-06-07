@@ -3,6 +3,7 @@ package com.kush.dao;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
 
 import com.kush.api.dao.ProductDAO;
@@ -16,9 +17,12 @@ import com.kush.beans.ProductType;
  */
 @Repository
 public class ProductDAOImpl implements ProductDAO {
+	final static Logger logger = Logger.getLogger(ProductDAOImpl.class);
 	
 	@Override
 	public List<Category> getCategoryType() {
+		logger.debug("Get Category Type - DAO");
+		
 		List<Category> categories = new ArrayList<Category>();
 		List<ProductType> productTypes = new ArrayList<ProductType>();
 		
